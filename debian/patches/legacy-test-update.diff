@@ -1,0 +1,15 @@
+Description: use full name to simplify autopkgtest
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-10-04
+
+--- a/legacy/test/test.js
++++ b/legacy/test/test.js
+@@ -1,6 +1,6 @@
+ const assert = require( 'assert' );
+ const rollup = require( 'rollup' );
+-const buble = require( '..' );
++const buble = require( 'rollup-plugin-buble' );
+ 
+ process.chdir( __dirname );
+ 

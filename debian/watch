@@ -1,0 +1,12 @@
+version=4
+opts=\
+mode=git,\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-rollup-plugin-buble-$1.tar.gz/ \
+ https://github.com/rollup/plugins.git refs/tags/buble-v?([\d\.]+) group
+
+opts=\
+component=legacy,\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-rollup-plugin-buble-$1.tar.gz/ \
+https://github.com/rollup/rollup-plugin-buble/tags .*/archive/v?([\d\.]+).tar.gz group

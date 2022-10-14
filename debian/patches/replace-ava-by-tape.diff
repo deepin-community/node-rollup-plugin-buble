@@ -1,0 +1,23 @@
+Description: replace ava by tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-10-04
+
+--- a/packages/buble/test/test.js
++++ b/packages/buble/test/test.js
+@@ -1,7 +1,7 @@
+-const test = require('ava');
++const test = require('tape');
+ const rollup = require('rollup');
+ 
+-const buble = require('..');
++const buble = require('@rollup/plugin-buble');
+ 
+ process.chdir(__dirname);
+ 
+@@ -32,4 +32,5 @@
+     .then((generated) => {
+       t.is(generated.length, 1);
+       t.is(generated[0].code, 'function main () { return 42; }\n\nexport default main;\n');
++      t.end();
+     }));

@@ -1,0 +1,37 @@
+Source: node-rollup-plugin-buble
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Julien Puydt <jpuydt@debian.org>
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-babel7
+ , mocha <!nocheck>
+ , node-buble (>= 0.20.0+~0.19.2)
+ , node-rollup-plugin-typescript (>= 3.0.0)
+ , node-typescript (>= 3.7~)
+ , node-tape <!nocheck>
+ , nodejs (>= 10~)
+ , rollup (>= 0.68.2+ds)
+Standards-Version: 4.5.0
+Homepage: https://github.com/rollup/plugins
+Vcs-Git: https://salsa.debian.org/js-team/node-rollup-plugin-buble.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-rollup-plugin-buble
+Rules-Requires-Root: no
+
+Package: node-rollup-plugin-buble
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-buble (>= 0.19.8-3)
+ , node-rollup-pluginutils (>= 3.0.0)
+ , nodejs (>= 10)
+Breaks:
+ node-buble (<< 0.19.8-3~)
+ , rollup (<< 0.68.2+ds~)
+Description: Rollup plugin to convert ES2015 to more common javascript using buble
+ This plugin for rollup will convert javascript using the too-recent
+ ES2015 standard to older and more common javascript variants, using the
+ buble transpiler.

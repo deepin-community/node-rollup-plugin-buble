@@ -1,0 +1,2 @@
+cd packages/buble
+tape test/test.js

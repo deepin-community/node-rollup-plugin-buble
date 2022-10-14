@@ -1,0 +1,100 @@
+node-rollup-plugin-buble (0.21.3+repack+~0.19.8-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Pirate Praveen ]
+  * Update minimum version of node-typescript
+
+  [ Xavier Guimard ]
+  * Remove @rollup/wasm from import (Closes: #975362) and repack
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 21 Nov 2020 09:26:39 +0100
+
+node-rollup-plugin-buble (0.21.3+~0.19.8-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+  * Remove useless "Breaks"
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 13 Oct 2020 11:13:01 +0200
+
+node-rollup-plugin-buble (0.21.3+~0.19.8-1) experimental; urgency=medium
+
+  * Team upload
+  * Remove useless multiple builds (all stages built exactly the same
+    binaries)
+  * Enable upstream test in autopkgtest
+  * Bump debhelper compatibility level to 13
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Use dh-sequence-nodejs
+  * Update homepage
+  * Update upstream name to @rollup/plugin-buble
+  * Embed legacy rollup-plugin-buble as component
+  * New upstream version 0.21.3+~0.19.8
+  * Add lintian overrides
+  * Enable legacy test during autopkgtest
+  * Update build
+  * Enable upstream test using tape instead of ava
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 04 Oct 2020 14:55:13 +0200
+
+node-rollup-plugin-buble (0.19.8-2) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+  * Merge unstable-master branch
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 13 Mar 2020 23:08:51 +0530
+
+node-rollup-plugin-buble (0.19.4-3) unstable; urgency=medium
+
+  * Team upload
+  * Rebuild with newer rollup
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 22 Feb 2020 21:51:30 +0100
+
+node-rollup-plugin-buble (0.19.8-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 0.19.8
+  * Switch to pkg-js-tools auto install
+  * Update minimum version of node-buble
+  * Bump Standards-Version to 4.4.1 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 12 Oct 2019 11:14:47 +0530
+
+node-rollup-plugin-buble (0.19.4-2) unstable; urgency=medium
+
+  * Team upload
+  * Build using rollup
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 31 Dec 2018 23:02:46 +0100
+
+node-rollup-plugin-buble (0.19.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh packaging:
+    - Use my debian.org mail address.
+    - Point Vcs-* fields to salsa.
+    - Bump std-ver to 4.2.1.
+
+ -- Julien Puydt <jpuydt@debian.org>  Wed, 10 Oct 2018 23:53:27 +0200
+
+node-rollup-plugin-buble (0.19.2-1) unstable; urgency=medium
+
+  * Refresh packaging:
+    - Bump dh compat to 11.
+    - Use https for the d/copyright Format line.
+    - Bump years in d/copyright.
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Wed, 07 Mar 2018 08:26:54 +0100
+
+node-rollup-plugin-buble (0.15.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #876405)
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Fri, 03 Nov 2017 20:12:23 +0100
