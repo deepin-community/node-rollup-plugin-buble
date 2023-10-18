@@ -1,3 +1,56 @@
+node-rollup-plugin-buble (1.0.1+ds1+~0.19.8-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.2
+  * Add typescript workaround (Closes: #1042282)
+
+ -- Yadd <yadd@debian.org>  Sun, 13 Aug 2023 09:19:27 +0400
+
+node-rollup-plugin-buble (1.0.1+ds1+~0.19.8-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.0.1+ds1+~0.19.8
+
+ -- Yadd <yadd@debian.org>  Sun, 20 Nov 2022 07:30:44 +0100
+
+node-rollup-plugin-buble (1.0.0+ds1+~0.19.8-2) unstable; urgency=medium
+
+  * Team upload
+  * Add fix for rollup 3 (Closes: #1022645)
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Oct 2022 12:35:55 +0200
+
+node-rollup-plugin-buble (1.0.0+ds1+~0.19.8-1) unstable; urgency=medium
+
+  * Team upload
+  * Update doc: install the right README.md
+  * Update standards version to 4.6.1, no changes needed.
+  * Fix excluded files list
+  * Install upstream changelog
+  * New upstream version 1.0.0+ds1+~0.19.8
+  * Update build links
+  * Refresh patches
+
+ -- Yadd <yadd@debian.org>  Sun, 09 Oct 2022 08:18:37 +0200
+
+node-rollup-plugin-buble (0.21.3+repack+~0.19.8-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+
+  [ Yadd ]
+  * Add ctype=nodejs to component(s)
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix GitHub tags regex
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * Workaround tsc paths bug (Closes: #1002228)
+  * Fix test for rollup ≥ 2.61 (Closes: #1002228)
+
+ -- Yadd <yadd@debian.org>  Tue, 21 Dec 2021 18:47:34 +0100
+
 node-rollup-plugin-buble (0.21.3+repack+~0.19.8-1) unstable; urgency=medium
 
   * Team upload

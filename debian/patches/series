@@ -1,2 +1,5 @@
 legacy-test-update.diff
 replace-ava-by-tape.diff
+fix-test-for-rollup-2.61.patch
+fix-for-rollup-3.patch
+tsc-workaround.patch

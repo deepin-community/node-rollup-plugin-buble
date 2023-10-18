@@ -1,7 +1,7 @@
 Description: replace ava by tape
 Author: Xavier Guimard <yadd@debian.org>
 Forwarded: not-needed
-Last-Update: 2020-10-04
+Last-Update: 2022-10-09
 
 --- a/packages/buble/test/test.js
 +++ b/packages/buble/test/test.js
@@ -15,9 +15,9 @@ Last-Update: 2020-10-04
  
  process.chdir(__dirname);
  
-@@ -32,4 +32,5 @@
-     .then((generated) => {
-       t.is(generated.length, 1);
-       t.is(generated[0].code, 'function main () { return 42; }\n\nexport default main;\n');
-+      t.end();
-     }));
+@@ -30,4 +30,5 @@
+   const generated = await getChunksFromBundle(bundle);
+   t.is(generated.length, 1);
+   t.is(generated[0].code, 'function main () { return 42; }\n\nexport { main as default };\n');
++  t.end();
+ });

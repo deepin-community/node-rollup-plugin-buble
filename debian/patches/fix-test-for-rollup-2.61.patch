@@ -1,0 +1,17 @@
+Description: fix test for new rollup
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1002228
+Forwarded: no
+Last-Update: 2021-12-21
+
+--- a/legacy/test/test.js
++++ b/legacy/test/test.js
+@@ -27,7 +27,7 @@
+ 		}).then(getChunksFromBundle)
+ 			.then(generated => {
+ 				assert.equal(generated.length, 1);
+-				assert.equal(generated[0].code, 'function main () { return 42; }\n\nexport default main;\n');
++				assert.equal(generated[0].code, 'function main () { return 42; }\n\nexport { main as default };\n');
+ 			});
+ 	});
+ });

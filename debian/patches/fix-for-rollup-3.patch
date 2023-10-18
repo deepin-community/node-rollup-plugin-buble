@@ -1,0 +1,17 @@
+Description: fix for rollup 3
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1022645
+Forwarded: not-needed
+Last-Update: 2022-10-26
+
+--- a/legacy/rollup.config.js
++++ b/legacy/rollup.config.js
+@@ -1,6 +1,6 @@
+-import pkg from './package.json';
++const pkg = require('./package.json');
+ 
+-export default {
++module.exports = {
+ 	input: 'src/index.js',
+ 	output: [
+ 		{ format: 'es', file: pkg.module },
