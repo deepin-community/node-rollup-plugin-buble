@@ -2,7 +2,8 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: @rollup/plugin-buble
 Upstream-Contact: https://github.com/rollup/plugins/issues
 Source: https://github.com/rollup/plugins
-Files-Excluded: packages/wasm
+Files-Excluded: packages
+Files-Included: packages/buble
 
 Files: *
 Copyright: 2017-2018 Rich Harris <richard.a.harris@gmail.com>

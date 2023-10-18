@@ -1,0 +1,5 @@
+buble
+rollup
+@rollup/pluginutils
+@rollup/plugin-typescript
+@types/buble
